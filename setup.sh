@@ -1,1 +1,2 @@
-npm i
+cd /home/ubuntu/www
+npm install
