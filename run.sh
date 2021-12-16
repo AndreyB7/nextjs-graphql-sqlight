@@ -1,3 +1,3 @@
 cd /home/ubuntu/www
 npm run build
-npm run start
+pm2 start npm --name "next_app" -- start
