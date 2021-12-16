@@ -1,4 +1,5 @@
 cd /home/ubuntu/www
 npm run generate
 npm run build
-pm2 start npm --name "next_app" -- start 
+sudo chmod 777 prisma prisma/dev.db
+pm2 start npm --name "next_app" -- start
