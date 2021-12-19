@@ -18,7 +18,7 @@ const Header = () => {
     <nav>
       <div className="left">
         <Link href="/">
-          <a className="bold" data-active={isActive("/")}>
+          <a data-active={isActive("/")}>
             Blog
           </a>
         </Link>
@@ -39,10 +39,6 @@ const Header = () => {
           display: flex;
           padding: 2rem;
           align-items: center;
-        }
-
-        .bold {
-          font-weight: bold;
         }
 
         a {
