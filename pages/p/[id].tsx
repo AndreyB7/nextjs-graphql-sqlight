@@ -1,4 +1,5 @@
 import Layout from "../../components/Layout"
+import Loader from "../../components/Loader"
 import Router, { useRouter } from "next/router"
 import gql from "graphql-tag"
 import { useQuery, useMutation } from "@apollo/client"
@@ -59,7 +60,7 @@ function Post() {
 
   if (loading) {
     console.log("loading")
-    return <div>Loading ...</div>
+    return <Loader/>
   }
   if (error) {
     console.log("error")

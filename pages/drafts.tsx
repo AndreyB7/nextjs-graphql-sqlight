@@ -1,4 +1,5 @@
 import Layout from "../components/Layout"
+import Loader from "../components/Loader"
 import Link from "next/link"
 import gql from "graphql-tag"
 import { useQuery } from "@apollo/client"
@@ -42,7 +43,7 @@ const Drafts = () => {
   })
 
   if (loading) {
-    return <div>Loading ...</div>
+    return <Loader/>
   }
   if (error) {
     return <div>Error: {error.message}</div>
