@@ -1,7 +1,11 @@
+import Head from 'next/head'
 import Header from './Header'
 
 const Layout = props => (
   <div>
+    <Head>
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+    </Head>
     <Header />
     <div className="layout">{props.children}</div>
     <style jsx global>{`
