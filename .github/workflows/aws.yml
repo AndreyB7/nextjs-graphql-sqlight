@@ -12,8 +12,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 14
-      - run: npm i
-      - run: npm run build
   
   continuous-deployment:
     runs-on: ubuntu-latest
