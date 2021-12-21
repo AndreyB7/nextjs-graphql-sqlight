@@ -5,6 +5,7 @@ import { SwitchTransition, CSSTransition } from "react-transition-group"
 const Layout = props => (
   <>
     <Head>
+      <title>Sunrisedev Petproject</title>
       <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     </Head>
     <SwitchTransition mode="out-in">
