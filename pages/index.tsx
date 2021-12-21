@@ -25,14 +25,6 @@ const Post = ({ post }) => (
       <h2>{post.title}</h2>
       <small>By {post.author.name}</small>
       <p>{post.content}</p>
-      <style jsx>{`
-        a {
-          text-decoration: none;
-          color: inherit;
-          padding: 2rem;
-          display: block;
-        }
-      `}</style>
     </a>
   </Link>
 )
@@ -42,7 +34,7 @@ const Blog = () => {
     fetchPolicy: "cache-and-network",
   })
   if (loading) {
-    return <Loader/>
+    return <Loader />
   }
   if (error) {
     return <div>Error: {error.message}</div>
@@ -53,26 +45,15 @@ const Blog = () => {
       <div className="page">
         <h1>My Blog</h1>
         <main>
-          {data.feed.map(post => (
-            <div key={post.id} className="post">
-              <Post post={post} />
-            </div>
-          ))}
+          <div className="posts">
+            {data.feed.map(post => (
+              <div key={post.id} className="post">
+                <Post post={post} />
+              </div>
+            ))}
+          </div>
         </main>
       </div>
-      <style jsx>{`
-        .post {
-          transition: box-shadow 0.1s ease-in;
-        }
-
-        .post:hover {
-          box-shadow: 0px 0px 15px -2px #aaa;
-        }
-
-        .post + .post {
-          margin-top: 2rem;
-        }
-      `}</style>
     </Layout>
   )
 }
