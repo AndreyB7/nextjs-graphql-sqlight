@@ -66,7 +66,7 @@ const Blog = () => {
         }
 
         .post:hover {
-          box-shadow: 1px 1px 3px #aaa;
+          box-shadow: 0px 0px 15px -2px #aaa;
         }
 
         .post + .post {
