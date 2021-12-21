@@ -38,10 +38,6 @@ const Layout = props => (
               margin-bottom:.5em;
             }
 
-            .post {
-              background: rgba(0, 0, 0, 0.05);
-            }
-
             input,
             textarea {
               font-size: 16px;
@@ -58,11 +54,6 @@ const Layout = props => (
             }
             .fade-appear-done {
               transition: opacity 200ms;
-            }
-          `}</style>
-          <style jsx>{`
-            .layout {
-              padding: 0 2rem;
             }
           `}</style>
         </div>
